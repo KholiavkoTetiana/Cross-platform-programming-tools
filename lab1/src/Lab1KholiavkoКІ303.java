@@ -13,7 +13,7 @@ public class Lab1KholiavkoКІ303 {
 
     /**
      * Конструктор класу Lab1KholiavkoКІ303.
-     * Нічого не робить, використовується за замовчуванням.
+     *Використовується за замовчуванням.
      */
     public Lab1KholiavkoКІ303() {
     }
@@ -40,36 +40,31 @@ public class Lab1KholiavkoКІ303 {
         }
         char symbol = input.charAt(0);
 
-        char[][] jaggedArray = new char[n][];
+        char[][] array = new char[n][n];
         for (int i = 0; i < n; i++) {
-            jaggedArray[i] = new char[n - i];
-            for (int j = 0; j < n - i; j++) {
-                jaggedArray[i][j] = symbol;
+            for (int j = 0; j < n; j++) {
+                array[i][j] = (j < i) ?  ' ' :  symbol;
             }
         }
 
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < i; j++) {
-                System.out.print(" ");
-            }
-            for (int j = 0; j < jaggedArray[i].length; j++) {
-                System.out.print(jaggedArray[i][j]);
+            for (int j = 0; j < n; j++) {
+                System.out.print(array[i][j]);
             }
             System.out.println();
         }
 
-        try {
-            FileWriter writer = new FileWriter("output.txt");
-            for (int i = 0; i < jaggedArray.length; i++) {
-                for (int j = 0; j < jaggedArray[i].length; j++) {
-                    writer.write(jaggedArray[i][j] + " ");
+        try (FileWriter writer = new FileWriter("output.txt")) {
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                    writer.write(array[i][j]);
                 }
                 writer.write("\n");
             }
-            writer.close();
             System.out.println("\nМасив збережено у файл output.txt");
         } catch (IOException e) {
             System.out.println("Помилка запису у файл: " + e.getMessage());
         }
+
     }
 }
