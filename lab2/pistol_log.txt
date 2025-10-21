@@ -1,0 +1,32 @@
+[2025-09-25T18:14:23.808680] Pistol created: Model-Default SN-000
+[2025-09-25T18:14:23.811748] Toggled safety -> false
+[2025-09-25T18:14:23.811948] reloadMagazine -> loaded=5
+[2025-09-25T18:14:23.812009] Slide cocked
+[2025-09-25T18:14:23.812132] Fired one round. Remaining: 4
+[2025-09-25T18:14:23.812189] Slide cocked
+[2025-09-25T18:14:23.812258] Fired one round. Remaining: 3
+[2025-09-25T18:14:23.812362] Aim at: target-50m with sight iron
+[2025-09-25T18:14:23.813080] Attached sight: red-dot
+[2025-09-25T18:14:23.822557] Status requested: Pistol[Model-Default SN-000] safety=false cocked=false mag=3/10 sight=red-dot
+[2025-09-25T18:14:23.822670] Detached sight, now: iron
+[2025-09-25T21:14:10.836659] Pistol created: Model-Default SN-000
+[2025-09-25T21:14:10.838852] === Тестуємо пістолет за замовчуванням ===
+[2025-09-25T21:14:10.839633] Toggled safety -> false
+[2025-09-25T21:14:10.839824] reloadMagazine -> loaded=5
+[2025-09-25T21:14:10.839875] Slide cocked
+[2025-09-25T21:14:10.839983] Fired one round. Remaining: 4
+[2025-09-25T21:14:10.840044] Slide cocked
+[2025-09-25T21:14:10.840089] Fired one round. Remaining: 3
+[2025-09-25T21:14:10.840177] Aim at: target-50m with sight iron
+[2025-09-25T21:14:10.840812] Attached sight: red-dot
+[2025-09-25T21:14:10.849385] Status requested: Pistol[Model-Default SN-000] safety=false cocked=false mag=3/10 sight=red-dot
+[2025-09-25T21:14:10.849561] Detached sight, now: iron
+[2025-09-25T21:14:10.849625] Pistol created: Glock-19 SN-123456
+[2025-09-25T21:14:10.849667] === Тестуємо пістолет з кастомними параметрами ===
+[2025-09-25T21:14:10.849722] Toggled safety -> false
+[2025-09-25T21:14:10.849764] reloadMagazine -> loaded=10
+[2025-09-25T21:14:10.849795] Slide cocked
+[2025-09-25T21:14:10.849828] Fired one round. Remaining: 9
+[2025-09-25T21:14:10.849862] Aim at: target-100m with sight holographic
+[2025-09-25T21:14:10.849894] Detached sight, now: iron
+[2025-09-25T21:14:10.849975] Status requested: Pistol[Glock-19 SN-123456] safety=false cocked=false mag=9/15 sight=iron

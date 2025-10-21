@@ -2,8 +2,8 @@ def generate_jagged_list(n: int, symbol: str):
 
     jagged_list = []
     for i in range(n):
-        row = [symbol] * (n - i)
-        jagged_list.append(row)
+        row = ['&'] * (n - i) if i % 2 == 0 else [symbol] * (n - i)
+    jagged_list.append(row)
     return jagged_list
 
 
