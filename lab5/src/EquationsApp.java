@@ -13,16 +13,16 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Клас <code>Lab5Test</code> є драйвером для тестування функціональності
- * класу {@link ResultManager}, включаючи обчислення та операції
+ * Клас <code>EquationsApp</code> є драйвером для тестування функціональності
+ * класу {@link ResultManager}, що включає обчислення та операції
  * читання/запису файлів.
  *
  * @author Andriy Ivanenko
- * @version 1.0
+ * @version 1.1
  */
-public class Lab5Test {
+public class EquationsApp {
     /**
-     * Головний метод програми для тестування.
+     * Головний метод програми для демонстрації роботи.
      *
      * @param args Аргументи командного рядка (не використовуються).
      */
@@ -33,30 +33,27 @@ public class Lab5Test {
         try {
             System.out.print("Enter X (in degrees): ");
             int x = scanner.nextInt();
-
-            // 1. Обчислення
             manager.calculate(x);
-            System.out.println("Calculation result: " + manager.getResult());
+            System.out.println("1. Calculation result: " + manager.getResult());
 
             String textFile = "Result.txt";
             String binaryFile = "Result.bin";
 
-            // 2. Запис у файли
             manager.writeResTxt(textFile);
-            System.out.println("Result was written to " + textFile);
+            System.out.println("2. Result was written to " + textFile);
             manager.writeResBin(binaryFile);
-            System.out.println("Result was written to " + binaryFile);
+            System.out.println("3. Result was written to " + binaryFile);
 
-            // 3. Читання з двійкового файлу та перевірка
             manager.readResBin(binaryFile);
-            System.out.println("Result read from " + binaryFile + ": " + manager.getResult());
+            System.out.println("4. Result read from binary file (" + binaryFile + "): " + manager.getResult());
 
-            // 4. Читання з текстового файлу та перевірка
             manager.readResTxt(textFile);
-            System.out.println("Result read from " + textFile + ": " + manager.getResult());
+            System.out.println("5. Result read from text file (" + textFile + "): " + manager.getResult());
 
-        } catch (CalcException | IOException | InputMismatchException ex) {
-            System.err.println("An error occurred: " + ex.getMessage());
+        } catch (CalcException | IOException ex) {
+            System.err.println("Error: " + ex.getMessage());
+        } catch (InputMismatchException ex) {
+            System.err.println("Input error: Please enter an integer value for X.");
         } finally {
             scanner.close();
         }
