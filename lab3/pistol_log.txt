@@ -1,0 +1,17 @@
+[2025-10-09T12:34:21.666871] === Тест: default WaterPistol ===
+[2025-10-09T12:34:21.674080] Pistol created: WaterG-100 WAT-000
+[2025-10-09T12:34:21.674914] WaterPistol configured: waterPerShot=10
+[2025-10-09T12:34:21.676407] Filled water: added=100, now=100
+[2025-10-09T12:34:21.676671] Set safety -> false
+[2025-10-09T12:34:21.676737] Slide cocked
+[2025-10-09T12:34:21.676840] Sprayed water: consumed=10, remaining=90
+[2025-10-09T12:34:21.703871] Status requested: Pistol[WaterG-100 WAT-000] safety=false cocked=false mag=90/200 sight=water-nozzle
+[2025-10-09T12:34:21.704148] === Тест: custom WaterPistol ===
+[2025-10-09T12:34:21.704242] Pistol created: HydroMax W-12345
+[2025-10-09T12:34:21.704301] WaterPistol configured: waterPerShot=30
+[2025-10-09T12:34:21.704358] Filled water: added=200, now=200
+[2025-10-09T12:34:21.704408] Set safety -> false
+[2025-10-09T12:34:21.704452] Slide cocked
+[2025-10-09T12:34:21.704502] Sprayed water: consumed=30, remaining=170
+[2025-10-09T12:34:21.704635] Status requested: Pistol[HydroMax W-12345] safety=false cocked=false mag=170/300 sight=wide-nozzle
+[2025-10-09T12:34:21.704712] === Demo finished ===

@@ -1,0 +1,13 @@
+[2025-10-09 17:44:36] === Demo started ===\n[2025-10-09 17:44:36] === Test: default WaterPistol ===\n[2025-10-09 17:51:38] === Demo started ===\n[2025-10-09 17:51:38] === Test: default WaterPistol ===\n[2025-10-09 17:52:32] === Demo started ===\n[2025-10-09 17:52:32] === Test: default WaterPistol ===\n[2025-10-09 17:52:32] Pistol created: WaterG-100 WAT-000\n[2025-10-09 17:52:32] WaterPistol configured: water_per_shot=10\n[2025-10-09 18:02:05] === Demo started ===
+[2025-10-09 18:02:05] === Test: default WaterPistol ===
+[2025-10-09 18:02:05] Pistol created: WaterG-100 WAT-000
+[2025-10-09 18:02:05] WaterPistol configured: water_per_shot=10
+[2025-10-09 18:02:05] Filled water: added=100, now=100
+[2025-10-09 18:02:05] Set safety -> False
+[2025-10-09 18:02:05] Slide cocked
+[2025-10-09 18:02:05] Sprayed water: consumed=10, remaining=90
+[2025-10-09 18:02:05] === Test: spray multiple ===
+[2025-10-09 18:02:05] Slide cocked
+[2025-10-09 18:02:05] Sprayed water: consumed=10, remaining=80
+[2025-10-09 18:02:05] Slide cocked
+[2025-10-09 18:02:05] Sprayed water: consumed=10, remaining=70
